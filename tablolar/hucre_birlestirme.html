@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hucre Birlestirme</title>
+
+    <!-- width: 50%;  Parentin buyuklugunun %50'si (body)-->
+    <style>
+      .tablo {
+        width: 50%;
+        background-color: rgb(189, 189, 189);
+      }
+
+      .tablo td {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+      <!--birlestirme islemi her zaman asagiya dogru gerceklesir -->
+    <table class="tablo">
+      <tr>
+        <td>1</td>
+        <td>.</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>x</td>
+        <td>y</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>.</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>.</td>
+        <td>.</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>b</td>
+        <td>c</td>
+      </tr>
+    </table>
+<br>
+    <table class="tablo">
+      <tr>
+        <td rowspan="3">.</td>
+        <td>.</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        
+        <td colspan="2">x ile y birlesti</td>
+      </tr>
+      <tr>
+        
+        <td>.</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>.</td>
+        <td>.</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td colspan="3">abc birlesti</td>
+      </tr>
+    </table>
+  </body>
+</html>

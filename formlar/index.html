@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <h1>Kayit Formu</h1>
+
+    <form action="server/kayit.js" method="post">
+      <!--'post' link satirinda hangi datalarin server'a gonderildigini gizlemek icin kullanilir-->
+      <input type="hidden" name="id" value="123456789" />
+      <!--'name' datayi server'a gondermek icin kullanilir. Name yazan degerler dataya gonderilir-->
+      <p>
+        <label for="ad">Adiniz</label>
+        <!--'required' doldurulmasi zorunlu alanlar icin kullanilir-->
+        <!--minlength="6" uzunluk sarti kosmak icin kullanilir-->
+        <input id="ad" type="text" value="Ali" required minlength="6" />
+      </p>
+      <p>
+        <label for="soyad">Soyadiniz</label>
+        <input id="soyad" type="text" placeholder="Soyadinizi giriniz" />
+        <!--placeholder arka plan yazisi-->
+      </p>
+
+      <p>
+        <label for="sifre">Sifreniz</label>
+        <input id="sifre" type="password" />
+      </p>
+
+      <p>
+        <label for="deneyim">Deneyim</label>
+        <!--min - max sinir degerleri belirliyor-->
+        <input type="number" id="deneyim" min="0" max="10" />
+      </p>
+
+      <p>
+        <label for="ara">Ara</label>
+        <input id="ara" type="search" />
+      </p>
+
+      <p>
+        <label>Hobileriniz</label> <br />
+
+        <input type="checkbox" name="futbol" id="x" value="futbol" />
+        <label for="x">Futbol</label>
+        <br />
+
+        <input
+          type="checkbox"
+          name="basketbol"
+          id="basketbol"
+          value="basketbol"
+          checked
+        />
+        <!--'checked' otomatik olarak tikli gelir-->
+        <label for="basketbol">Basketbol</label>
+        <br />
+
+        <input type="checkbox" name="voleybol" id="voleybol" value="voleybol" />
+        <label for="voleybol">Voleybol</label>
+      </p>
+
+      <p>
+        <label for="cinsiyet">Cinsiyet</label><br />
+
+        <!--'radio'nun calismasi icin name degerlerinin ayni olmasi lazim-->
+
+        <input type="radio" name="cinsiyet" id="erkek" />
+        <label for="erkek">Erkek</label> <br />
+        <input type="radio" name="cinsiyet" id="kadin" />
+        <label for="kadin">Kadin</label>
+      </p>
+
+      <!--'radio'nun calismasi icin name degerlerinin ayni olmasi lazim 
+            Asagidaki ornekte name'i cinsiyet yaparsak kod olmasi gerektigi calismaz-->
+
+      <p>
+        <label for="cinsiyet">Medeni Hali</label><br />
+
+        <input type="radio" name="medeni_hali" id="evli" value="evli" />
+        <label for="evli">Evli</label> <br />
+        <input type="radio" name="medeni_hali" id="bekar" value="bekar" />
+        <label for="bekar">Bekar</label>
+      </p>
+
+      <p>
+        <label for="">Avatar</label>
+        <input type="file" name="avatar" id="avatar" />
+      </p>
+
+      <p>
+        <label for="">Dogum Tarihi</label>
+        <input type="date" name="date" id="" />
+      </p>
+
+      <p>
+        <label for="dogum_yeri">Dogum Yeri</label>
+        <!--'size' secin butonunun boyutunu belirliyor-->
+
+        <select name="dogum" id="dogum_yeri" size="4" multiple>
+          <option value="1">Adana</option>
+          <option value="2">Adiyaman</option>
+          <option value="3">Afyon</option>
+          <option value="4">Agri</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="adres">Adres</label><br />
+        <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+      </p>
+
+      <p>
+        <!--'disabled' buttonu yahut herhangi doldurulmasi gereken bir satiri islevsiz birakiyor-->
+        <input type="submit" value="Gonder" />
+        <input type="button" value="Kontrol Et" />
+        <input type="reset" value="Temizle" />
+      </p>
+    </form>
+  </body>
+</html>

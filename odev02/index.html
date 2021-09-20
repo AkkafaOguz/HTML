@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <style>
+    .tablo {
+      background-color: rgb(224, 220, 220);
+    }
+
+    .tablo doldurma {
+      width: 200px;
+    }
+  </style>
+
+  <body>
+    <h3>Lutfen formu doldurun</h3>
+
+    <form action="">
+      <table class="tablo">
+        <tr>
+          <td><label for="eposta">Eposta</label></td>
+          <td class="doldurma">
+            <input type="text" id="eposta" name="eposta" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="sifre">Sifre</label></td>
+          <td class="doldurma">
+            <input type="passsword" id="sifre" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="guvenlik_kodu">Guvenlik Kodu</label></td>
+          <td class="doldurma">
+            <input type="text" id="guvenlik_kodu" required />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <input type="submit" value="Giris" />
+            <input
+              type="reset"
+              name="sifirla"
+              value="Temizle"
+              text-alligne="center"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

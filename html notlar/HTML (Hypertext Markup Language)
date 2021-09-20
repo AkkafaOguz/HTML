@@ -1,0 +1,54 @@
+HTML (Hypertext Markup Language)
+
+Isaretleme dilidir - Programlama dili degildir
+
+<b> Yaziyi koyu yapar
+<p> Paragraf 
+
+Olmasi gerek 4 tag :
+
+1) Html
+2) Head
+3) Tittle  -> SEO icin cok muhim olan kisim. Aramalarda cikmak icin anahtar kelimelerin girildigi kisim
+4) Body
+
+
+http://whatcms.org/ --> Site icerigi hakkinda bilgi veren site
+
+Kodun en basinda html versiyonumuzu belirtmeliyiz ki tarayici algilayip derleyebilsin "<!doctype html>"
+
+https://www.w3schools.com/tags/default.asp
+https://codepen.io/pen/?editors=0010
+
+Ana sayfanin dosya adi genel olarak index olarak adlandiriliyor. (index.html)
+
+<p> -> kendinden once ve sonra bosluk birakir
+<br> -> satir basi yapar kendinden once bosluk birakmaz
+
+Kod ortaminda yapilan ENTER ve SPACE'lerin bir anlami yok
+
+Bir sayfada birden fazla <h1> kulalnilabilir fakar SEO tavsiyesi olarak 1 sayfada birden fazla kullanmak onerilmiyor. Aldatmaca olarak dusunuluyor.
+
+SEO icin sayfadaki kelimeler puanlaniyor. Title ve <h1> deki kelimerin puan orani cok daha yuksek.
+
+<hr> horizontal row
+
+***)Sunucunun ilk yaptigi sey ilgili dosyayi gondermek fakat gondermeden once gelen dosyanin icerisinde back-end tarafinda gerceklestirilmesi gereken bir sey olup olmadigini kontrol ediyor. Eger calistirilmasi gereken kod varsa onlari onlari compile edip sonrasinda html olarak client tarafina yonlendirilir.
+
+***)Client tarafina gelen html-css-bootstrap, tarayici tarafindan islenip kullaniciya sunulur
+
+
+Semantic -> Arama motorlari icin anlamli olan taglara semantic tag denilir.
+
+<li> -> list
+<ol> ordered list
+<ul> unordered list
+li>ul*5>b>i -> Tek seferde liste olusturma
+<ul type="square"> -> unorderrd liste elemanlarinin basindaki belirteci sekillendirme 
+("disc | square | circle")
+<ol type="A"> orderrd liste elemanlarinin basindaki belirteci sekillendirme 
+
+
+Yanyana hucrelari birlertirmek colspan
+altalta hucreleri birlestirmek icin rowspan
+placeholde -> arka plan yazisi
